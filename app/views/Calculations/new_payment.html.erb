@@ -1,0 +1,13 @@
+<h1>Payment Calculator</h1>
+<%= form_tag('/payment/results', method: :get) do %>
+  <label for="apr">APR (%):</label>
+  <%= text_field_tag :apr %>
+  <br>
+  <label for="years">Loan Term (years):</label>
+  <%= text_field_tag :years %>
+  <br>
+  <label for="principal">Principal Amount ($):</label>
+  <%= text_field_tag :principal %>
+  <br>
+  <%= submit_tag 'Calculate Payment' %>
+<% end %>

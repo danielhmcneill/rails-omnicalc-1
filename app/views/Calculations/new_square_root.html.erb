@@ -1,0 +1,6 @@
+<h1>Square Root Calculator</h1>
+<%= form_tag('/square_root/results', method: :get) do %>
+  <label for="users_number">Enter a number:</label>
+  <%= text_field_tag :users_number %>
+  <%= submit_tag 'Calculate square root' %>
+<% end %>

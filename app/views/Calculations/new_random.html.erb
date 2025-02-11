@@ -1,0 +1,10 @@
+<h1>Random Number Generator</h1>
+<%= form_tag('/random/results', method: :get) do %>
+  <label for="min">Minimum Value:</label>
+  <%= text_field_tag :min %>
+  <br>
+  <label for="max">Maximum Value:</label>
+  <%= text_field_tag :max %>
+  <br>
+  <%= submit_tag 'Generate Random Number' %>
+<% end %>
